@@ -53,17 +53,106 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <div class="col-sm-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h5>CNPJ/CPF - NOME/RazaoSocial - EndereçoCompleto - Telefone/Email - Status</h5>
+                                    <h5>CNPJ/CPF - NOME/RazaoSocial -
+                                        EndereçoCompleto - Telefone/Email - Status</h5>
                                 </div>
                                 <div class="card-body">
-                                    <form>
-                                        
-                                    </form>
+                                    <form role="form">
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <div class="form-group">
+
+                                                    <label>Estabelecimento</label>
+                                                    <div class="form-check">
+                                                        <input id="pf" class="form-check-input" type="radio"
+                                                            name="radio1">
+                                                        <label for="pf" class="form-check-label">Pessoa Física</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input id="pj" class="form-check-input" type="radio"
+                                                            name="radio1">
+                                                        <label for="pj" class="form-check-label">Pessoa Juridica</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md 3" id="divTipoDocumento">
+                                                <div class="form-group">
+                                                    <label></label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md 3" id="divNomeRazaoSocial">
+                                                <div class="form-group">
+                                                    <label></label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md 3" id="divNomeFantasia">
+                                                <div class="form-group">
+                                                    <label></label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md 3" id="divInscricaoEstadual">
+                                                <div class="form-group">
+                                                    <label></label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label>CEP</label>
+                                                    <input type="text" class="form-control" id="cep">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label>Rua</label>
+                                                    <input type="text" class="form-control" id="rua">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label>Número</label>
+                                                    <input type="text" class="form-control" id="numero">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label>Bairro</label>
+                                                    <input type="text" class="form-control" id="bairro">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label>Cidade</label>
+                                                    <input type="text" class="form-control" id="cidade">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label>UF</label>
+                                                    <input type="text" class="form-control" id="uf">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label>IBGE</label>
+                                                    <input type="text" class="form-control" id="ibge">
+                                                </div>
+                                            </div>
+
+
+                                        </div>
                                 </div>
                                 <div class="card-footer">
                                     este é o fotter
                                 </div>
                             </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -85,6 +174,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- REQUIRED SCRIPTS -->
 
     <?php require_once("dist/js/javascript.php");?>
+    <script src="dist/js/pages/fornecedor/fornecedor_incluir.js"></script>
+    <script src="dist/js/viacep.js"></script>
 </body>
 
 </html>
