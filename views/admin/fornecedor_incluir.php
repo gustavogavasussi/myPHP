@@ -53,15 +53,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <div class="col-sm-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h5>CNPJ/CPF - NOME/RazaoSocial -
-                                        EndereçoCompleto - Telefone/Email - Status</h5>
+                                    <h5>Cadastar Formulario</h5>
                                 </div>
-                                <div class="card-body">
-                                    <form role="form">
+                                <form role="form" name="formCadastrarFornecedor" action="processa_cadastro.php" method="POST">
+                                <div class="card-body">             
                                         <div class="row">
                                             <div class="col-md-2">
                                                 <div class="form-group">
-
                                                     <label>Estabelecimento</label>
                                                     <div class="form-check">
                                                         <input id="pf" class="form-check-input" type="radio"
@@ -84,19 +82,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                             <div class="col-md 3" id="divNomeRazaoSocial">
                                                 <div class="form-group">
                                                     <label></label>
-                                                    <input type="text" class="form-control">
+                                                    <input type="text" class="form-control" name="nome">
                                                 </div>
                                             </div>
                                             <div class="col-md 3" id="divNomeFantasia">
                                                 <div class="form-group">
                                                     <label></label>
-                                                    <input type="text" class="form-control">
+                                                    <input type="text" class="form-control" name="fantasia">
                                                 </div>
                                             </div>
                                             <div class="col-md 3" id="divInscricaoEstadual">
                                                 <div class="form-group">
                                                     <label></label>
-                                                    <input type="text" class="form-control">
+                                                    <input type="text" class="form-control" name="inscricao">
                                                 </div>
                                             </div>
                                         </div>
@@ -105,51 +103,50 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>CEP</label>
-                                                    <input type="text" class="form-control" id="cep">
+                                                    <input type="text" class="form-control" id="cep" name="cep">
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>Rua</label>
-                                                    <input type="text" class="form-control" id="rua">
+                                                    <input type="text" class="form-control" id="rua" name="rua">
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>Número</label>
-                                                    <input type="text" class="form-control" id="numero">
+                                                    <input type="text" class="form-control" id="numero" name="numero">
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>Bairro</label>
-                                                    <input type="text" class="form-control" id="bairro">
+                                                    <input type="text" class="form-control" id="bairro" name="bairro">
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>Cidade</label>
-                                                    <input type="text" class="form-control" id="cidade">
+                                                    <input type="text" class="form-control" id="cidade" name="cidade">
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>UF</label>
-                                                    <input type="text" class="form-control" id="uf">
+                                                    <input type="text" class="form-control" id="uf" name="uf">
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>IBGE</label>
-                                                    <input type="text" class="form-control" id="ibge">
+                                                    <input type="text" class="form-control" id="ibge" name="ibge">
                                                 </div>
                                             </div>
-
-
                                         </div>
                                 </div>
                                 <div class="card-footer">
-                                    este é o fotter
+                                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                                    <button type="reset" class="btn btn-link">Limpar formulario</button>
                                 </div>
                             </div>
                             </form>
